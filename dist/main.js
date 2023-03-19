@@ -11,7 +11,9 @@ const displayCityWeather = function() {
     const cityName = cityInput.val()
     weatherModel.getCityWeatherData(cityName)
         .then(cityWeatherData => {
-            renderer.renderCityWeatherData(cityWeatherData)
+            cityWeatherData.cityFromApi = true
+            const citiesWeatherData = [cityWeatherData]
+            renderer.renderCitiesWeatherData(citiesWeatherData)
         })
 }
 

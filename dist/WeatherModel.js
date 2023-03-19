@@ -19,17 +19,13 @@ class WeatherModel {
 
     addCityWeatherDataToDB(cityWeatherData) {
         $.post("weather/", cityWeatherData)
-            .then(cityWeatherDataResult => {
-                return cityWeatherData
-            })
+            .then(() => {})
     }
     deleteCityWeatherDataFromDB(cityName) {
         $.ajax({
             url: `weather/${cityName}`,
             type: 'DELETE',
-            success: function(result) {
-                // Do something with the result
-            }
+            success: function() {}
         });
         return this.citiesWeatherData
     }
