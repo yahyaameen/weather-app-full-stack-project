@@ -19,7 +19,6 @@ body {
     background-color: rgb(60, 0, 255);
     margin: 5px;
     padding: 20px;
-    font-family: "Lucida" Grande, sans-serif;
 }
 
 span {
@@ -27,7 +26,6 @@ span {
 }
 
 i {
-    display: inline-block;
     vertical-align: middle;
     text-align: center;
 }
@@ -42,6 +40,5 @@ i {
         background-color: blue;
         margin: 5px;
         padding: 20px;
-        font-family: "Lucida" Grande, sans-serif;
     }
 }
